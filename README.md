@@ -81,7 +81,7 @@ Write a program to count how many elements are common between two arrays.
     }
     printf("Number of common elements: %d", count);
 }
-```c
+```
 
 
 
