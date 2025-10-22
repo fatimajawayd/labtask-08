@@ -83,6 +83,54 @@ Write a program to count how many elements are common between two arrays.
 }
 ```
 
+## PROBLEM:04
+Temperature Record System A city records temperatures for 7 days in 3 different shifts (morning, afternoon, night). Store this data in a 2D array [7][3] and: Display the temperature table. Find the average temperature for each day.
+
+```c
+#include <stdio.h>
+int main(void){
+    int temp[7][3];
+    int i,j;
+    float avg;
+    int sum;
+
+    for(i=0;i<7;i++){
+        for(j=0;j<3;j++){
+            if(j==0){
+                printf("Enter morning temperature of day %d: ", i+1);
+                scanf("%d", &temp[i][j]);
+            }
+            else if(j==1){
+                printf("Enter afternoon temperature of day %d: ", i+1);
+                scanf("%d", &temp[i][j]);
+            }
+            else{
+                printf("enter night temperature of day %d: ", i+1);
+                scanf("%d", &temp[i][j]);
+            }
+        }
+    }
+    printf("\nTEMPERATURE RECORD\n");
+    printf("DAY\tMORNING\tAFTERNOON\tNIGHT\n");
+    for(i=0; i<7; i++){
+        printf("%d\t",i+1); 
+        for(j=0; j<3; j++){
+            printf("%d\t", temp[i][j]);
+        }
+        printf("\n");
+    }
+    printf("\nDAILY AVERAGES:\n");
+    for(i=0; i<7; i++){
+        sum = temp[i][0] + temp[i][1] + temp[i][2];
+        avg = sum / 3.0;
+        printf("Day %d Average: %.2f\n", i+1, avg);
+    }
+    return 0;
+}
+```
+
+
+
 
 
 
