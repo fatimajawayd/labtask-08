@@ -129,6 +129,10 @@ int main(void){
 }
 ```
 
+## PROBELM:05
+A school has 5 students and 3 subjects. marks[5][3] = { {80, 75, 90}, {60, 70, 65}, {78, 82, 88}, {92, 85, 89}, {55, 60, 58} }; Store the marks in a 2D array [5][3]. Find:  Total marks of each student.  Average marks of each subject.
+
+```c
 
 
 
