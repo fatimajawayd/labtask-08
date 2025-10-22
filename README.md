@@ -35,6 +35,32 @@ int main(void){
 }
 ```
 
+## PROBLEM:02
+Write a C program to find the intersection of two arrays. Intersection means elements that are common in both arrays.
+
+```c
+#include <stdio.h>
+int main(void){
+    int array1[] = {1,2,3,4};
+    int array2[] = {3,4,5,6};
+    int i,j,k = 0;
+    int array3[8];
+    for(i=0; i<4; i++){
+        for(j=0; j<4; j++){
+            if(array1[i] == array2[j]){
+                break;
+            }
+        }
+        if(j != 4){
+            array3[k++] = array1[i];
+        }
+    }
+    for(i=0; i<k;i++){
+        printf("%d", array3[i]);
+    }
+}
+```
+
 
 
 ## PROBLEM:05
