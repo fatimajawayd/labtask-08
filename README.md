@@ -133,12 +133,42 @@ int main(void){
 A school has 5 students and 3 subjects. marks[5][3] = { {80, 75, 90}, {60, 70, 65}, {78, 82, 88}, {92, 85, 89}, {55, 60, 58} }; Store the marks in a 2D array [5][3]. Find:  Total marks of each student.  Average marks of each subject.
 
 ```c
+#include <stdio.h>
+int main(void){
+    int marks[5][3] = {
+        {80, 75, 90}, 
+        {60, 70, 65},
+        {78, 82, 88}, 
+        {92, 85, 89},
+        {55, 60, 58}};
+    int total, avg, i,j;
+
+    printf("\nTOTAL MARKS OF EACH STUDENT:\n");
+    for(i=0;i<5;i++){
+        total = 0;
+        for(j=0; j<3; j++){
+            total += marks[i][j];
+        }
+        printf("Student %d: %d\n", i+1, total);
+
+    }
+
+    printf("\nAVERAGE MARKS OF EACH STUDENT:\n");
+    for(j=0; j<3; j++){
+        avg = 0;
+        for(i=0; i<5; i++){
+            total += marks[i][j];
+        }
+        avg = total/5;
+        printf("Averga emarks of each subject %d is: %d\n", j+1, avg);   
+    }
+}
+```
 
 
 
 
-
-## PROBLEM:05
+## PROBLEM:06
 Write a C program for character pattern
 A
 B C
