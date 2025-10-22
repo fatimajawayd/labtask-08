@@ -61,6 +61,29 @@ int main(void){
 }
 ```
 
+## PROBLEM:03
+Write a program to count how many elements are common between two arrays.
+
+```c
+  int array1[] = {1,2,3,4};
+    int array2[] = {3,4,5,6};
+    int i,j,count = 0;
+
+    for(i=0; i<4; i++){
+        for(j=0; j<4; j++){
+            if(array1[i] == array2[j]){
+                break;
+            }
+        }
+        if(j != 4){
+            count++;
+        }
+    }
+    printf("Number of common elements: %d", count);
+}
+```c
+
+
 
 
 ## PROBLEM:05
